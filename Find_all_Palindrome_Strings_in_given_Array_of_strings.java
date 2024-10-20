@@ -1,70 +1,12 @@
 
 
-// Enter the Array String : 5
-// Enter the Array String Values : abd abc adaa racecarr cool
-//  -1 (No palindromic String Given in the String Array)
+// Input: arr[] = {"abc", "car", "ada", "racecar", "cool"}
+// Output: ada racecar
+// Explanation: These two are the only palindrome strings in the given array
 
-// Enter the Array String : 5
-// Enter the Array String Values : abc car ada racecar cool
-// ada racecar
-
-//=====================without Using ArrayList================
-
-
-/* 
-import java.util.Scanner;
-public class Find_all_Palindrome_Strings_in_given_Array_of_strings {
-	public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
-
-		System.out.print("Enter the Array String : ");
-		int n = sc.nextInt();  // n = 5
-		
-
-		String[] str = new String[50];
-
-
-		System.out.print("Enter the Array String Values : ");
-		for(int i=0; i<n; i++){
-			str[i] = sc.next(); // str = {"abc", "car", "ada", "racecar", "cool"};
-		}
-
-		
-		String sum = "";
-		int flag = 0;
-		for(int i=0; i<n; i++){
-				sum = str[i];
-				int n1 = sum.length();
-
-				String rev = "";
-					for(int j=n1-1; j>=0; j--){
-						rev = rev + sum.charAt(j); // cba, rac, ada, racecar, looc
-					}
-
-
-					if(sum.equals(rev)){
-						flag = 1;
-						System.out.print(sum + " ");
-					}
-				}
-
-			if(flag == 0){
-				System.out.println(" -1 ");
-			}
-		
-	}
-}
-
-*/
-
-
-
-//=====================Using ArrayList================
-
-
-
-
-//First Palindroming String is : ada
+// Input: arr[] = {"def", "ab"}
+// Output: -1
+// Explanation: No palindrome string is present in the given array
 
 
 import java.util.ArrayList;
